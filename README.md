@@ -1,7 +1,7 @@
-# fibonacci
 import java.util.Scanner;
-public class Fibonacci {
+public class modified {
     public static void main(String[]args) {
+		long x = 0; 
         Scanner show = new Scanner(System.in);
         System.out.print("Masukan Jumlah Deret Fibonacci : ");
         int n = show.nextInt();
@@ -16,7 +16,9 @@ public class Fibonacci {
          
         for (int i = 0; i < n; i++) {
             System.out.print(fib[i] +  " ");
+			x = x + fib[i]; 
         }
+		System.out.print("\nHasil : " + x); 
     }
  
 }
